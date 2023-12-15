@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #DDDDCC;
+}
+
+.blog-post {
+    width: 800px;
+    
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff; /* 배경색 추가 */
+}
+
+.blog-post h1 {
+    color: #333;
+}
+
+.date {
+    color: #666;
+    font-size: 0.9em;
+}
+
+.content {
+    padding: 20px; /* 내용과 컨테이너의 경계 사이에 여백을 추가 */
+    line-height: 2; /* 줄 간격을 1.6으로 설정, 이는 글자 크기의 1.6배 */
+    text-align: justify; /* 양쪽 정렬로 글자를 깔끔하게 정렬 */
+    font-size: 1em; /* 기본 글자 크기 설정, 필요에 따라 조정 가능 */
+    /* 기타 스타일 속성 */
+}
+.comments-section {
+   margin-top: 40px;
+}
+.comment-form{
+    display: flex;
+    flex-direction: column; /* 버튼을 텍스트 영역 아래로 배치 */
+}
+.comments-section h2 {
+    color: #333;
+}
+
+
+#comments {
+    padding: 10px;
+    border-bottom: 1px solid #ccc; /* 하단 테두리 추가 */
+}
+
+.comment-form textarea {
+    width: 100%; /* 너비를 부모 요소에 맞춤 */
+    padding: 10px;
+    border: 1px solid #605c5c;
+    border-radius: 4px;
+    margin-bottom: 10px; /* 버튼과의 간격 */
+}
+
+/* 마지막 댓글에는 하단 테두리가 없도록 설정 */
+#comments .comment:last-child {
+    border-bottom: 1px #333;
+}
+
+#submitComment {
+    width: auto; /* 버튼의 너비를 내용에 맞게 조절 */
+    align-self: flex-end; /* 버튼을 오른쪽으로 정렬 */
+    padding: 10px 20px; /* 버튼 패딩 조절 */
+}
+
+
+/* 반응형 쿼리  */
+
+/*@media screen and (max-width: 600px) {
+    .blog-post {
+        width: 100%;  화면이 작을 때 너비를 100%로 조정 
+        padding: 10px;  패딩 조정 
+    }
+
+    .blog-post h1 {
+        font-size: 1.5em;  작은 화면에서의 제목 폰트 크기 조정 
+    }
+
+    .content, .comments-section {
+        text-align: left;  작은 화면에서의 텍스트 정렬 조정 
+    }
+
+    .comment-form textarea, #submitComment {
+        width: 100%;  작은 화면에서의 입력 필드와 버튼 너비 조정 
+    }
+}*/
+
+
+
